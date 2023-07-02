@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: dispatcher-service
+    namespace: polar
+    labels:
+        app: dispatcher-service
+spec:
+    type: ClusterIP
+    selector:
+      app: dispatcher-service
+    ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9003
+  
