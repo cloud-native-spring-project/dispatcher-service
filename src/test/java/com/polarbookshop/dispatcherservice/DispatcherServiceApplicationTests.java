@@ -9,5 +9,4 @@ class DispatcherServiceApplicationTests {
     @Test
     void contextLoads() {
     }
-
 }
